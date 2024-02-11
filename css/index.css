@@ -110,7 +110,7 @@ header .navLinks nav ul li a:hover {
     /* margin-right: 30px; */
 }
 
-.toDonate button:hover {
+.toDonate button:hover , .trade button:hover, .sports button:hover, .education button:hover,.read button:hover {
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
 }
