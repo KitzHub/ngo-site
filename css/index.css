@@ -395,7 +395,7 @@ header .navLinks nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-.area{
+.area, .logoTitle{
     margin-left: 100px;
     color:rgba(34, 34, 136, 0.945) ;
 }
@@ -408,10 +408,10 @@ header .navLinks nav ul li a:hover {
     margin-top: 20px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .education, .sports, .trade{
-    /* display: flex; */
     justify-content: center;
     height: 60vh;
     width: 25vw;
@@ -457,4 +457,22 @@ footer{
     width: 100vw;
     background-color: #003980;
     margin-top: 100px;
+}
+
+#partnersLogo{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.worldBank, .youngAfrica, .nonHub{
+    flex: 1;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.worldBank img, .youngAfrica img, .nonHub img{
+    width: 170px;
 }
