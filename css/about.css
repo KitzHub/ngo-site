@@ -114,3 +114,62 @@ header .navLinks nav ul li a:hover {
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
 }
+
+.below-about-header{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.left-below-about{
+    height: 100%;
+    width: 54%;
+    padding-left: 100px;
+    padding-top: 150px;
+    background-color: #e0e3e7;
+}
+
+
+
+.right-below-about{
+    height: 100%;
+    width: 46%;
+    margin-left: 70px;
+    /* text-align: center; */
+}
+
+.right-below-about h1{
+    font-size: var(--bigText);
+    color: var(--blue);
+}
+
+.right-below-about p{
+    font-size: var(--smallText);
+    color: var(--blue);
+}
+
+.right-below-about button{
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--small-text);
+    border: none;
+    margin-top: 25px;
+}
+
+.right-below-about button:hover{
+    opacity: 0.7;
+    transition: all 0.1s ease-in-out;
+}
