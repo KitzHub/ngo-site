@@ -36,6 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
+
 }
 
 header .unity {
@@ -79,10 +80,11 @@ header .navLinks nav ul li a {
     text-decoration: none;
     font-family: Arial;
     font-size: var(--small-text);
-    font-weight: 500;
+    font-weight: 400;
     line-height: auto;
     cursor: pointer;
     color: var(--blue);
+    font-family: "Poppins", sans-serif;
 }
 
 header .navLinks nav ul li a:hover {
@@ -107,12 +109,18 @@ header .navLinks nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
     /* margin-right: 30px; */
 }
 
-.toDonate button:hover , .trade button:hover, .sports button:hover, .education button:hover,.read button:hover {
+.toDonate button:hover,
+.trade button:hover,
+.sports button:hover,
+.education button:hover,
+.read button:hover {
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -197,6 +205,17 @@ header .navLinks nav ul li a:hover {
     background-color: var(--red);
     opacity: 70%;
     border-radius: 255px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: var(--bigText);
+  
+}
+
+.hero-play-btn span {
+    color: white;
+    
+   
 }
 
 .hero .right-hero {
@@ -311,7 +330,7 @@ header .navLinks nav ul li a:hover {
 
 
 .leftBelow p {
-    color:var(--blue);
+    color: var(--blue);
     font-size: 16px;
     margin-bottom: 20px;
     display: inline-flex;
@@ -360,7 +379,7 @@ header .navLinks nav ul li a:hover {
 }
 
 
-.education  button{
+.education button {
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 7px;
@@ -372,7 +391,7 @@ header .navLinks nav ul li a:hover {
     cursor: pointer;
 }
 
-.sports button{
+.sports button {
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 7px;
@@ -384,7 +403,7 @@ header .navLinks nav ul li a:hover {
     cursor: pointer;
 }
 
-.trade button{
+.trade button {
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 7px;
@@ -395,13 +414,15 @@ header .navLinks nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-.area, .logoTitle{
+
+.area,
+.logoTitle {
     margin-left: 100px;
-    color:rgba(34, 34, 136, 0.945) ;
+    color: rgba(34, 34, 136, 0.945);
 }
 
 
-#focus{
+#focus {
     height: 70vh;
     width: 100vw;
     display: flex;
@@ -411,33 +432,48 @@ header .navLinks nav ul li a:hover {
     margin-bottom: 50px;
 }
 
-.education, .sports, .trade{
+.education,
+.sports,
+.trade {
     justify-content: center;
     height: 60vh;
     width: 25vw;
-    background-color:white;
+    background-color: white;
     margin-right: 30px;
     text-align: center;
     padding-top: 30px;
-    box-shadow: 4px 4px rgba(246, 105,109, 0.25);
+    box-shadow: 4px 4px rgba(246, 105, 109, 0.25);
 }
 
+.education h1,
+.sports h1,
+.trade h1 {
+    background-color: #f66a6c14;
+    display: inline-block;
+    border-radius: 200px;
+    padding: 5px 10px 5px 10px;
 
-.education  button {
-   margin-top: 40px;
+}
+
+.education button {
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
 }
 
 .sports button {
     margin-top: 40px;
+    font-family: "Poppins", sans-serif;
 }
 
-.trade button{
+.trade button {
     margin-top: 40px;
+    font-family: "Poppins", sans-serif;
 }
-.education  p {
-   margin-top: 10px;
-   color: #003980;
-   font-size: 16px;
+
+.education p {
+    margin-top: 10px;
+    color: #003980;
+    font-size: 16px;
 }
 
 .sports p {
@@ -446,33 +482,38 @@ header .navLinks nav ul li a:hover {
     font-size: 16px;
 }
 
-.trade p{
+.trade p {
     margin-top: 10px;
     color: #003980;
     font-size: 16px;
 }
 
-footer{
-    height: 70vh;
-    width: 100vw;
-    background-color: #003980;
-    margin-top: 100px;
-}
-
-#partnersLogo{
+#partnersLogo {
     display: flex;
     margin-top: 20px;
     justify-content: center;
     align-items: center;
 }
 
-.worldBank, .youngAfrica, .nonHub{
+.worldBank,
+.youngAfrica,
+.nonHub {
     flex: 1;
     justify-content: center;
     margin-top: 40px;
     margin-left: 90px;
 }
 
-.worldBank img, .youngAfrica img, .nonHub img{
+.worldBank img,
+.youngAfrica img,
+.nonHub img {
     width: 170px;
+}
+
+
+footer {
+    height: 70vh;
+    width: 100vw;
+    background-color: #003980;
+    margin-top: 100px;
 }
