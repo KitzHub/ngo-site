@@ -1,0 +1,175 @@
+/* Red color = F66A6D */
+/* Blue color = 003980 */
+
+
+:root {
+
+    /* colors */
+    --blue: #003980;
+    --red: #F66A6D;
+    --white: #ffffff;
+    --background: #F9F7F7;
+    --bigText: 32px;
+    --large-text: 24px;
+    --medium-text: 18px;
+    --small-text: 14px;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Poppins", sans-serif;
+}
+
+/* header */
+header {
+    max-height: 60px;
+    position: fixed;
+    z-index: 1;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+header .unity {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.unity p {
+    font-size: var(--large-text);
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.unity p::first-letter {
+    color: var(--red);
+}
+
+header .navLinks {
+    flex-grow: 1;
+
+}
+
+header .navLinks nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+header .navLinks nav ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+header .navLinks nav ul li a {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: var(--small-text);
+    font-weight: 500;
+    line-height: auto;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+header .navLinks nav ul li a:hover {
+    color: var(--red);
+    transition: all 0.1s ease-in-out;
+}
+
+.toDonate {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.toDonate button {
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-right: 30px; */
+}
+
+.toDonate button:hover , .trade button:hover, .sports button:hover, .education button:hover,.read button:hover {
+    opacity: 0.7;
+    transition: all 0.1s ease-in-out;
+}
+
+.below-about-header{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.left-below-about{
+    height: 100%;
+    width: 54%;
+    padding-left: 100px;
+    padding-top: 150px;
+    background-color: #e0e3e7;
+}
+
+
+
+.right-below-about{
+    height: 100%;
+    width: 46%;
+    margin-left: 70px;
+    /* text-align: center; */
+}
+
+.right-below-about h1{
+    font-size: var(--bigText);
+    color: var(--blue);
+}
+
+.right-below-about p{
+    font-size: var(--smallText);
+    color: var(--blue);
+}
+
+.right-below-about button{
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--small-text);
+    border: none;
+    margin-top: 25px;
+}
+
+.right-below-about button:hover{
+    opacity: 0.7;
+    transition: all 0.1s ease-in-out;
+}
