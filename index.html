@@ -17,7 +17,7 @@
     <title>Home</title>
   </head>
 
-  <body>
+  <body  onclick="">
     <!-- header -->
     <header>
       <div class="unity">
@@ -28,8 +28,12 @@
         <nav>
           <ul>
             <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-            <li><a href="http://127.0.0.1:5500/html/about.html">About us</a></li>
-            <li><a href="">Activities</a></li>
+            <li>
+              <a href="http://127.0.0.1:5500/html/about.html">About us</a>
+            </li>
+            <li>
+              <a onclick="displayActivityDropDown()">Activities</a>
+            </li>
             <li><a href="">News</a></li>
             <li><a href="">NGOs</a></li>
             <li><a href="">Gallery</a></li>
@@ -69,9 +73,7 @@
           <div class="vid">
             <div class="hero-play">
               <div class="hero-play-btn">
-                <span class="material-symbols-outlined">
-                  play_arrow
-                  </span>
+                <span class="material-symbols-outlined"> play_arrow </span>
               </div>
               <figcaption>
                 <a onclick="scrollAndPlayVideo()">Watch video</a>
@@ -228,6 +230,8 @@
 
     <!-- footer -->
     <footer></footer>
+
+    <div class="activities-drop"></div>
   </body>
   <script src="javascript/index.js"></script>
 </html>

@@ -24,6 +24,7 @@
 body {
     background-color: var(--background);
     font-family: "Poppins", sans-serif;
+    overflow-y: auto;
 }
 
 /* header */
@@ -43,8 +44,6 @@ header .unity {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 
@@ -97,12 +96,14 @@ header .navLinks nav ul li a:hover {
     justify-content: center;
 }
 
-.toDonate button {
+.toDonate button,
+.member-btn button {
     padding-left: 39px;
     padding-right: 39px;
     padding-bottom: 7px;
     padding-top: 7px;
     color: white;
+    font-family: "Poppins", sans-serif;
     background-color: var(--blue);
     border: none;
     border-radius: 5px;
@@ -110,50 +111,58 @@ header .navLinks nav ul li a:hover {
     /* margin-right: 30px; */
 }
 
-.toDonate button:hover , .trade button:hover, .sports button:hover, .education button:hover,.read button:hover {
+.toDonate button:hover,
+.trade button:hover,
+.sports button:hover,
+.education button:hover,
+.read button:hover,
+.member-btn button:hover {
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
 }
 
-.below-about-header{
-    height: 70vh;
-    width: 100vw;
+main {
+    width: 100%;
+}
+
+.below-about-header {
+    height: 80vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 100px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.left-below-about{
+.left-below-about {
     height: 100%;
     width: 54%;
-    padding-left: 100px;
-    padding-top: 150px;
     background-color: #e0e3e7;
+    margin-left: 100px;
 }
 
 
-
-.right-below-about{
+.right-below-about {
     height: 100%;
     width: 46%;
     margin-left: 70px;
     /* text-align: center; */
+
 }
 
-.right-below-about h1{
+.right-below-about h1 {
     font-size: var(--bigText);
     color: var(--blue);
 }
 
-.right-below-about p{
+.right-below-about p {
     font-size: var(--smallText);
     color: var(--blue);
 }
 
-.right-below-about button{
+.right-below-about button {
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 7px;
@@ -169,7 +178,107 @@ header .navLinks nav ul li a:hover {
     margin-top: 25px;
 }
 
-.right-below-about button:hover{
+.right-below-about button:hover {
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
+}
+
+
+.goals {
+    height: 60vh;
+    width: 100%;
+
+}
+
+.goals h2 {
+    font-size: var(--medium-text);
+}
+
+.mission {
+    /* background-color: #F66A6D; */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.vision {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.member {
+    background-color: #F66A6D;
+    color: var(--white);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+background-size:auto ;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/assets/images/hero.png") center/cover no-repeat;
+}
+
+.member h2 {
+    font-size: 32px;
+}
+
+.member p {
+    font-size: var(--small-text);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.team {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .team-container {
+    height: 35vh;
+    background-image: url(/assets/images/mem.jpg);
+    width: 20%;
+    background-size: cover;
+   border-radius: 15px;
+}
+
+.team .member-info {
+    height: 70px;
+    margin-top: 200px;
+    background-color: papayawhip;
+   border-radius: 15px;
+ 
+}
+
+.team h2{
+    text-align: center;
+}
+
+.team p{
+    text-align: center;
+}
+
+.team-title{
+    font-size: var(--medium-text);
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+footer {
+    height: 70vh;
+    width: 100vw;
+    background-color: #003980;
+    margin-top: 50px;
 }

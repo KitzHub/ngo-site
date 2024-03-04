@@ -24,6 +24,8 @@
 body {
     background-color: var(--background);
     font-family: "Poppins", sans-serif;
+    overflow-y: auto;
+    position: relative;
 }
 
 /* header */
@@ -135,7 +137,7 @@ header .navLinks nav ul li a:hover {
     justify-content: center;
     padding-top: 100px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .hero .left-hero {
@@ -205,17 +207,17 @@ header .navLinks nav ul li a:hover {
     background-color: var(--red);
     opacity: 70%;
     border-radius: 255px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: var(--bigText);
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--bigText);
+
 }
 
 .hero-play-btn span {
     color: white;
-    
-   
+
+
 }
 
 .hero .right-hero {
@@ -516,4 +518,16 @@ footer {
     width: 100vw;
     background-color: #003980;
     margin-top: 100px;
+}
+
+
+.activities-drop{
+   height: 220px; 
+   width: 200px;
+   background-color: #F66A6D;
+   position: absolute;
+   top: 50px;
+   left: 490px;
+   display: none;
+   position: fixed;
 }
