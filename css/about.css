@@ -173,3 +173,10 @@ header .navLinks nav ul li a:hover {
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
 }
+
+.mission-body h1{
+    font-size: var(--bigText);
+    color: var(--blue);
+    margin-top: 60px;
+}
+
