@@ -21,6 +21,13 @@ function displayActivityDropDown() {
     }
 }
 
+function takeActivityDropdownOff() {
+    const activityDropdown = document.querySelector(".activities-drop");
+    if (activityDropdown.style.display === "block") {
+        activityDropdown.style.display = "none";
+    }
+}
+
 // function takeActivityDropdownOff() {
 //     const activityDropdown = document.querySelector(".activities-drop");
 //     if (activityDropdown.style.display === "block") {

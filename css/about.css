@@ -150,11 +150,13 @@ main {
     margin-left: 70px;
     /* text-align: center; */
 
+
 }
 
 .right-below-about h1 {
     font-size: var(--bigText);
     color: var(--blue);
+    margin-top: 20px;
 }
 
 .right-below-about p {
@@ -226,6 +228,7 @@ background-size:auto ;
 
 .member h2 {
     font-size: 32px;
+    font-family: "Poppins", sans-serif;
 }
 
 .member p {

@@ -267,9 +267,9 @@ header .navLinks nav ul li a:hover {
     text-align: start;
     padding-left: 20px;
     right: 320px;
-    bottom: -75px;
+    bottom: -35px;
     border-radius: 10px;
-    box-shadow: -1px 4px 4px -2px rgba(0, 0, 0, 0.486)
+    box-shadow: -1px 4px 4px -2px rgba(0, 0, 0, 0.486);
 }
 
 .hero-stat h1 {
