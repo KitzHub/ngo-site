@@ -122,81 +122,51 @@ header .navLinks nav ul li a:hover {
     font-family: "Poppins", sans-serif;
 }
 
-/* Main */
-
 main {
-    height: 125vh;
-    display: flex;
     margin-left: 95px;
     margin-right: 95px;
-
 }
 
-.gform {
-    height: 105vh;
+.gallery-img-container {
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.gallery-img {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay {
+    position: absolute;
+    height: 100%;
     width: 100%;
-    background-color: rgb(224, 232, 245);
-    margin-top: 100px;
-    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.121);
+    bottom: 0px;
 }
 
-.gform h1 {
-    font-size: var(--large-text);
-    text-align: center;
-    margin-top: 50px;
-}
-
-.gform p {
-    text-align: center;
-    font-size: var(--small-text);
-}
-
-form {
-    margin-left: 90px;
-    margin-top: 20px;
-}
-
-label {
-    font-size: var(--small-text);
-}
-
-input {
-    padding: 10px 90px;
-    background-color: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.207);
-}
-
-input::placeholder {
-    color: rgba(0, 0, 0, 0.484);
-    text-align: center;
-}
-
-.gmap {
-    height: 105vh;
+.img-inf {
+    height: 100px;
     width: 100%;
-    /* background-color: coral; */
-    margin-top: 100px;
-    border-radius: 15px;
-    border: 2px solid rgba(0, 0, 0, 0.066);
-    margin-left: 10px;
+    background-color: salmon;
+    position: absolute;
+    bottom: -100px;
+    transition: bottom 0.3s ease;
 }
 
-.place {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+.gallery-img:hover .img-inf {
+    bottom: 0;
 }
 
-
-.place img {
-    height: 20px;
+.img-inf h4,
+.img-inf p {
+    text-align: center;
+    color: var(--white);
 }
-
-.place p {
-    margin-left: 10px;
-}
-
 
 footer {
     height: 70vh;
