@@ -125,7 +125,7 @@ header .navLinks nav ul li a:hover {
 /* Main */
 
 main {
-    height: 100vh;
+    height: 105vh;
     display: flex;
     margin-left: 95px;
     margin-right: 95px;
@@ -133,7 +133,7 @@ main {
 }
 
 .gform {
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     background-color: rgb(224, 232, 245);
     margin-top: 100px;
@@ -172,7 +172,7 @@ input::placeholder {
 }
 
 .gmap {
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     /* background-color: coral; */
     margin-top: 100px;
