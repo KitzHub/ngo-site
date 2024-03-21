@@ -116,7 +116,9 @@ header .navLinks nav ul li a:hover {
 .trade button:hover,
 .sports button:hover,
 .education button:hover,
-.read button:hover {
+.read button:hover,
+.submit:hover
+{
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
     font-family: "Poppins", sans-serif;
@@ -204,3 +206,4 @@ footer {
     background-color: #003980;
     margin-top: 100px;
 }
+
