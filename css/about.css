@@ -126,7 +126,7 @@ main {
 }
 
 .below-about-header {
-    height: 80vh;
+    /* height: 80vh; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -138,19 +138,15 @@ main {
 
 .left-below-about {
     height: 100%;
-    width: 54%;
-    background-color: #e0e3e7;
-    margin-left: 100px;
+    margin-left: 0px;
+    margin-right: px;
 }
 
 
 .right-below-about {
     height: 100%;
-    width: 46%;
     margin-left: 70px;
-    /* text-align: center; */
-
-
+    width: 46%;
 }
 
 .right-below-about h1 {
@@ -191,3 +187,48 @@ main {
     margin-top: 60px;
 }
 
+.goals{
+    margin-top: 70px;
+    margin-left: 126px;
+    margin-bottom: 30px;
+}
+
+.mission{
+    margin-bottom: 20px;
+}
+
+
+.mission h2, 
+.vision h2{
+    font-size: var( --medium-text);
+    color: var(--blue);
+}
+
+
+.mission p,
+.vision p,
+.member p
+{
+    font-size: var(--small-text);
+    color: var(--blue);
+    margin-top: 5px
+}
+
+
+.member{
+    margin-left: 126px; 
+}
+
+.member h2{
+    font-size: var(--bigText);
+    color: var(--blue); 
+}
+
+.member-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.team, .team-title{
+    margin-left: 126px;
+}
