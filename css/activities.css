@@ -38,6 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
+
 }
 
 header .unity {
@@ -45,6 +46,8 @@ header .unity {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 
@@ -98,18 +101,17 @@ header .navLinks nav ul li a:hover {
     justify-content: center;
 }
 
-.toDonate button,
-.member-btn button {
+.toDonate button {
     padding-left: 39px;
     padding-right: 39px;
     padding-bottom: 7px;
     padding-top: 7px;
     color: white;
-    font-family: "Poppins", sans-serif;
     background-color: var(--blue);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
     /* margin-right: 30px; */
 }
 
@@ -117,120 +119,8 @@ header .navLinks nav ul li a:hover {
 .trade button:hover,
 .sports button:hover,
 .education button:hover,
-.read button:hover,
-.member-btn button:hover {
+.read button:hover {
     opacity: 0.7;
     transition: all 0.1s ease-in-out;
-}
-
-main {
-    width: 100%;
-}
-
-.below-about-header {
-    /* height: 80vh; */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-    position: relative;
-    overflow: hidden;
-}
-
-.left-below-about {
-    height: 100%;
-    margin-left: 0px;
-    margin-right: px;
-}
-
-
-.right-below-about {
-    height: 100%;
-    margin-left: 70px;
-    width: 46%;
-}
-
-.right-below-about h1 {
-    font-size: var(--bigText);
-    color: var(--blue);
-    margin-top: 20px;
-}
-
-.right-below-about p {
-    font-size: var(--smallText);
-    color: var(--blue);
-}
-
-.right-below-about button {
-    padding-left: 27px;
-    padding-right: 27px;
-    padding-bottom: 7px;
-    padding-top: 7px;
-    color: white;
-    background-color: var(--blue);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-size: var(--small-text);
-    border: none;
-    margin-top: 25px;
-}
-
-.right-below-about button:hover {
-    opacity: 0.7;
-    transition: all 0.1s ease-in-out;
-}
-
-.mission-body h1{
-    font-size: var(--bigText);
-    color: var(--blue);
-    margin-top: 60px;
-}
-
-.goals{
-    margin-top: 70px;
-    margin-left: 126px;
-    margin-bottom: 30px;
-}
-
-.mission{
-    margin-bottom: 20px;
-}
-
-
-.mission h2, 
-.vision h2{
-    font-size: var( --medium-text);
-    color: var(--blue);
-}
-
-
-.mission p,
-.vision p,
-.member p
-{
-    font-size: var(--small-text);
-    color: var(--blue);
-    margin-top: 5px
-}
-
-
-.member{
-    margin-left: 126px; 
-}
-
-.member h2{
-    font-size: var(--bigText);
-    color: var(--blue); 
-}
-
-.member-btn{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.team, .team-title{
-    margin-left: 126px;
 }
