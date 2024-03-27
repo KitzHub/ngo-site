@@ -124,3 +124,10 @@ header .navLinks nav ul li a:hover {
     transition: all 0.1s ease-in-out;
     font-family: "Poppins", sans-serif;
 } 
+
+footer {
+    height: 70vh;
+    width: 100vw;
+    background-color: #003980;
+    margin-top: 100px;
+}
