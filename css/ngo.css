@@ -1,3 +1,7 @@
+/* Red color = F66A6D */
+/* Blue color = 003980 */
+
+
 :root {
 
     /* colors */
@@ -21,10 +25,8 @@ body {
     background-color: var(--background);
     font-family: "Poppins", sans-serif;
     overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
-    /* @media (max-width : 640px) {
-        grid-template-columns: repeat(2, 1fr);
-    } */
 }
 
 /* header */
@@ -45,6 +47,8 @@ header .unity {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 
@@ -98,8 +102,7 @@ header .navLinks nav ul li a:hover {
     justify-content: center;
 }
 
-.toDonate button,
-.submit {
+.toDonate button {
     padding-left: 39px;
     padding-right: 39px;
     padding-bottom: 7px;
@@ -124,67 +127,35 @@ header .navLinks nav ul li a:hover {
 }
 
 /* Main */
-
 main {
-    margin-left: 95px;
-    margin-right: 95px;
-   
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 100%;
 }
 
-.gallery-img-container {
-    background-color: var(--background);
+main h2 {
+    padding-top: 100px;
+    font-size: var(--medium-text);
+    font-weight: bold;
+}
+
+main p {
+    font-size: var(--small-text);
+    margin-top: 5px;
+}
+
+.partners-containers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding-top: 100px;
-
-    @media(width <= 640px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.gallery-img {
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-
-    @media (width <=  640px)  {
-        height: auto;
-    }
-}
-
-.img-overlay {
-    position: absolute;
-    height: 100%;
+    margin-top: 20px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.121);
-    bottom: 0px;
 }
 
-.img-inf {
+.partners-containers img {
     height: 100px;
-    width: 100%;
-    background-color: var(--red);
-    position: absolute;
-    bottom: -100px;
-    transition: bottom 0.3s ease;
-    @media (width <=  640px)  {
-        height: auto;
-    }
 }
 
-.gallery-img:hover .img-inf {
-    bottom: 0;
-}
-
-.img-inf h4,
-.img-inf p {
-    text-align: center;
-    color: var(--white);
-    @media (width <=  640px)  {
-      font-size: 14px;
-    }
-}
 
 footer {
     height: 70vh;

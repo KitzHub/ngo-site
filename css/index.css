@@ -25,6 +25,7 @@ body {
     background-color: var(--background);
     font-family: "Poppins", sans-serif;
     overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -522,12 +523,34 @@ footer {
 
 
 .activities-drop{
-   height: 220px; 
-   width: 200px;
-   background-color: #F66A6D;
+   height: 100px; 
+   width: 100%;
+   background-color: var(--blue);
    position: absolute;
    top: 50px;
-   left: 490px;
+   /* left: 480px; */
    display: none;
    position: fixed;
+}
+
+.activities-drop nav{
+    margin-top: 20px;
+    margin-left: 90px;
+
+}
+
+.activities-drop nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.activities-drop nav li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.activities-drop nav li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--small-text);
 }
