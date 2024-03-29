@@ -67,6 +67,14 @@ header .navLinks {
 
 }
 
+header .navLinks nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
 header .navLinks nav ul {
     display: flex;
     justify-content: center;
@@ -88,12 +96,30 @@ header .navLinks nav ul li a {
     cursor: pointer;
     color: var(--blue);
     font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 0 10px;
 }
 
-header .navLinks nav ul li a:hover {
+header .navLinks nav ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #F66A6D;
+    height:  2px;
+    width: 0%;
+    left: 0;
+    bottom: -1px;
+}
+
+header .navLinks nav ul li a:hover:after{
+    width: 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* header .navLinks nav ul li a:hover {
     color: var(--red);
     transition: all 0.1s ease-in-out;
-}
+} */
 
 .toDonate {
     display: flex;
