@@ -26,6 +26,7 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-y: auto;
     position: relative;
+
 }
 
 /* header */
@@ -134,14 +135,19 @@ main {
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-    position: relative;
     overflow: hidden;
+    margin-left: 100px;
 }
 
 .left-below-about {
     height: 100%;
     margin-left: 0px;
     margin-right: px;
+}
+
+.left-below-about iframe {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -183,61 +189,51 @@ main {
     transition: all 0.1s ease-in-out;
 }
 
-.mission-body h1{
+.mission-body h1 {
     font-size: var(--bigText);
     color: var(--blue);
     margin-top: 60px;
 }
 
-.goals{
+.goals {
     margin-top: 70px;
     margin-left: 126px;
     margin-bottom: 30px;
+    display: flex;
+    gap: 50px;
 }
 
-.mission{
+.mission {
     margin-bottom: 20px;
 }
 
 
-.mission h2, 
-.vision h2{
-    font-size: var( --medium-text);
+.mission h2,
+.vision h2 {
+    font-size: var(--medium-text);
     color: var(--blue);
 }
 
 
 .mission p,
 .vision p,
-.member p
-{
+.member p {
     font-size: var(--small-text);
     color: var(--blue);
     margin-top: 5px
 }
 
 
-.member{
-    margin-left: 126px; 
-}
 
-.member h2{
-    font-size: var(--bigText);
-    color: var(--blue); 
-}
 
-.member-btn{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.team, .team-title{
+.team,
+.team-title {
     margin-left: 126px;
     color: var(--blue);
 }
 
 
-.leaders-container{
+.leaders-container {
     height: 70vh;
     width: 100vw;
     display: flex;
@@ -246,7 +242,7 @@ main {
 }
 
 
-.leader-one{
+.leader-one {
     justify-content: center;
     height: 60vh;
     width: 25vw;
@@ -293,5 +289,3 @@ footer {
     background-color: #003980;
     margin-top: 100px;
 }
-
-
