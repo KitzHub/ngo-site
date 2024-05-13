@@ -13,6 +13,11 @@
     --large-text: 24px;
     --medium-text: 18px;
     --small-text: 14px;
+    --mobile-breakpoint: 480px;
+    --small-tablet-breakpoint: 768px;
+    --tablet-breakpoint: 1024px;
+    --desktop-breakpoint: 1280px;
+
 }
 
 * {
@@ -24,10 +29,10 @@
 body {
     background-color: var(--background);
     font-family: "Poppins", sans-serif;
-    overflow-y: auto;
     overflow-x: hidden;
     position: relative;
 }
+
 
 /* header */
 header {
@@ -35,7 +40,7 @@ header {
     position: fixed;
     z-index: 1;
     height: 70px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
@@ -67,7 +72,7 @@ header .navLinks {
 
 }
 
-header .navLinks nav{
+header .navLinks nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -101,17 +106,23 @@ header .navLinks nav ul li a {
     padding: 0 10px;
 }
 
-header .navLinks nav ul li a:after{
+.menu {
+    height: 25px;
+    height: 25px;
+    display: none;
+}
+
+header .navLinks nav ul li a:after {
     content: "";
     position: absolute;
     background-color: #F66A6D;
-    height:  2px;
+    height: 2px;
     width: 0%;
     left: 0;
     bottom: -1px;
 }
 
-header .navLinks nav ul li a:hover:after{
+header .navLinks nav ul li a:hover:after {
     width: 100px;
     transition: all 0.5s ease-in-out;
 }
@@ -281,9 +292,9 @@ header .navLinks nav ul li a:hover:after{
     background-color: var(--red);
     opacity: 70%;
     position: absolute;
-    bottom: 480px;
+    top: 12.5%;
     border-radius: 255px;
-    right: 300px;
+    left: 75%;
 }
 
 .hero .right-hero .hero-stat {
@@ -293,8 +304,8 @@ header .navLinks nav ul li a:hover:after{
     background-color: var(--white);
     text-align: start;
     padding-left: 20px;
-    right: 320px;
-    bottom: -35px;
+    left: 63%;
+    bottom: -4%;
     border-radius: 10px;
     box-shadow: -1px 4px 4px -2px rgba(0, 0, 0, 0.486);
 }
@@ -548,18 +559,18 @@ footer {
 }
 
 
-.activities-drop{
-   height: 100px; 
-   width: 100%;
-   background-color: var(--blue);
-   position: absolute;
-   top: 50px;
-   /* left: 480px; */
-   display: none;
-   position: fixed;
+.activities-drop {
+    height: 100px;
+    width: 100%;
+    background-color: var(--blue);
+    position: absolute;
+    top: 50px;
+    /* left: 480px; */
+    display: none;
+    position: fixed;
 }
 
-.activities-drop nav{
+.activities-drop nav {
     margin-top: 20px;
     margin-left: 90px;
 
@@ -575,8 +586,66 @@ footer {
     padding-top: 10px;
 }
 
-.activities-drop nav li a{
+.activities-drop nav li a {
     text-decoration: none;
     color: var(--white);
     font-size: var(--small-text);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+
+    body {
+        background-color: var(--background);
+        font-family: "Poppins", sans-serif;
+        overflow: hidden;
+        position: relative;
+    }
+
+    header {
+        overflow: hidden;
+    }
+
+    header .unity {
+        margin-left: 0px;
+        width: 0px;
+    }
+
+    header .unity p {
+        font-size: 16px;
+    }
+
+    header .navLinks nav {
+        background-color: #F66A6D;
+        height: 100vh;
+        width: 100vh;
+        display: none;
+    }
+
+    header .navLinks nav ul {
+        display: block;
+    }
+
+    header .menu {
+        display: block;
+        height: 25px;
+        width: 25px;
+        margin-top: 20px;
+        margin-left: 100%;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hero .left-hero {
+        /* background-color: ; */
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .hero .left-hero h1 {
+        font-size: 16px;
+
+    }
 }
